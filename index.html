@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars API</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <h1>Discover Mars!</h1>
+        <form id="header">
+            <label for="camera-name"></label>
+            <input type="text" placeholder="i.e. FHAZ" id="camera-name" required>
+            <input type="submit" value="Go!" id="submit-button">
+        </form>
+        <h2 id="title">Search Mars Images By Camera Name's Abbreviation</h2>
+        <h3>Query by Camera -- Curiosity</h3>
+        <table>
+            <tr>
+                <th>Camera Name</th>
+                <th>Abbreviation</th>
+            </tr>
+            <tr>
+                <th>Front Hazard Avoidance Camera</th>
+                <th>FHAZ</th>
+            </tr>
+            <tr>
+                <th>Rear Hazard Avoidance Camera</th>
+                <th>RHAZ</th>
+            </tr>
+            <tr>
+                <th>Mast Camera</th>
+                <th>MAST</th>
+            </tr>
+            <tr>
+                <th>Chemistry and Camera Complex</th>
+                <th>CHEMCAM</th>
+            </tr>
+            <tr>
+                <th>Mars Hand Lens Imager</th>
+                <th>MAHLI</th>
+            </tr>
+            <tr>
+                <th>Mars Descent Imager</th>
+                <th>MARDI</th>
+            </tr>
+            <tr>
+                <th>Navigation Camera</th>
+                <th>NAVCAM</th>
+            </tr>
+        </table>
+        <br />
+        <br />
+
+        <div>
+            <section id="results" class="hidden">
+                <h2 id="search-result"></h2>
+                <div id="results-list"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
